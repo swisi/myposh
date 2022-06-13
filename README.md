@@ -5,11 +5,13 @@ This is my Repertory for my personal "Oh my posh" settings
 
 ### Windows
 
-```` cmd Install
+Install
+```` cmd 
 winget install JanDeDobbeleer.OhMyPosh
 ```
 
-```` cmd Update
+Update
+```` cmd 
 winget install JanDeDobbeleer.OhMyPosh
 ```
 
