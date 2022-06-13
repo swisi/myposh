@@ -5,44 +5,33 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#227bbf",
+          "background": "#BF231D",
           "foreground": "#ffffff",
           "style": "plain",
-          "template": " \u26a1",
+          "template": " \uf0e7 ",
           "type": "root"
         },
         {
-          "background": "#227bbf",
+          "background": "#0A703E",
           "foreground": "#ffffff",
-          "properties": {
-            "alpine": "\uf300",
-            "arch": "\uf303",
-            "centos": "\uf304",
-            "debian": "\uf306",
-            "elementary": "\uf309",
-            "fedora": "\uf30a",
-            "gentoo": "\uf30d",
-            "linux": "\ue712",
-            "macos": "\ue711",
-            "manjaro": "\uf312",
-            "mint": "\uf30f",
-            "opensuse": "\uf314",
-            "raspbian": "\uf315",
-            "ubuntu": "\uf31c",
-            "windows": "\ue62a",
-            "wsl": "\ue712"
-          },
           "style": "plain",
-          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
+          "template": " {{ .Icon }} ",
           "type": "os"
         },
         {
-          "background": "#272727",
-          "foreground": "#43CCEA",
+          "background": "#0A703E",
+          "foreground": "#ffffff",
+          "style": "plain",
+          "template": "{{ .UserName }} ",
+          "type": "session"
+        },
+        {
+          "background": "#256C9D",
+          "foreground": "#ffffff",
           "properties": {
-            "folder_icon": "\ue5fe",
-            "folder_separator_icon": "<transparent> \ue0bd </>",
-            "home_icon": "\uf7db",
+            "folder_icon": "\uf115",
+            "folder_separator_icon": " \ue0b1 ",
+            "max_depth": 2,
             "style": "agnoster_short"
           },
           "style": "plain",
@@ -50,78 +39,27 @@
           "type": "path"
         },
         {
-          "background": "#272727",
-          "foreground": "#00ff0d",
+          "background": "#256C9D",
+          "foreground": "#ffffff",
           "properties": {
-            "fetch_stash_count": true,
-            "fetch_status": true
+            "branch_max_length": 30,
+            "fetch_stash_count": false,
+            "fetch_status": true,
+            "fetch_upstream_icon": true
           },
           "style": "plain",
-          "template": "<#000000>\ue0b1 </>{{ .HEAD }}{{ if .Staging.Changed }}<#FF6F00> \uf046 {{ .Staging.String }}</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+          "template": "[ {{ .UpstreamIcon }}{{ .HEAD }}{{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ]",
           "type": "git"
         },
         {
-             {
-               "foreground": "#007ACC",
-                "properties": {
-                "time_format": "15:04:05"
-               },
-              "style": "plain",
-              "template": " {{ .CurrentDate | date .Format }} ",
-              "type": "time"
-              }
-          }
-      ],
-      "type": "prompt"
-    },
-    {
-      "alignment": "right",
-      "segments": [
-        {
-          "background": "#272727",
-          "foreground": "#43CCEA",
-          "leading_diamond": "\ue0c5",
-          "style": "diamond",
-          "template": " {{ if .SSHSession }}\uf817 {{ end }}{{ .UserName }}<transparent> | </>{{ .HostName }}",
-          "type": "session"
-        },
-        
-      ],
-      "type": "prompt"
-    },
-    {
-      "alignment": "left",
-      "newline": true,
-      "segments": [
-        {
-          "foreground": "#00ff0d",
-          "foreground_templates": [
-            "{{ if gt .Code 0 }}#ff0000{{ end }}"
-          ],
-          "properties": {
-            "always_enabled": true
-          },
+          "foreground": "#256C9D",
           "style": "plain",
-          "template": "\ufb0c ",
-          "type": "exit"
-        },
-        {
-      "alignment": "right",
-      "segments": [
-        {
-          "foreground": "#007ACC",
-          "properties": {
-            "time_format": "15:04:05"
-          },
-          "style": "plain",
-          "template": " {{ .CurrentDate | date .Format }} ",
-          "type": "time"
+          "template": "\ue0b0 ",
+          "type": "text"
         }
       ],
       "type": "prompt"
     }
   ],
-  "final_space": true,
-  "osc99": true,
   "version": 2
 }
