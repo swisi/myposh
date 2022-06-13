@@ -86,16 +86,7 @@
           "template": " {{ if .SSHSession }}\uf817 {{ end }}{{ .UserName }}<transparent> | </>{{ .HostName }}",
           "type": "session"
         },
-        {
-          "background": "#ffffff",
-          "foreground": "#000000",
-          "type": "time"
-          },
-          "style": "diamond",
-          "template": "<#000000> \ue31e\uf0fb </>{{ .CurrentDate | date .Format }} ",
-          "trailing_diamond": "\ue0c5",
-          "type": "time"
-        }
+        
       ],
       "type": "prompt"
     },
@@ -114,6 +105,18 @@
           "style": "plain",
           "template": "\ufb0c ",
           "type": "exit"
+        },
+        {
+      "alignment": "right",
+      "segments": [
+        {
+          "foreground": "#007ACC",
+          "properties": {
+            "time_format": "15:04:05"
+          },
+          "style": "plain",
+          "template": " {{ .CurrentDate | date .Format }} ",
+          "type": "time"
         }
       ],
       "type": "prompt"
