@@ -83,14 +83,14 @@
           "foreground": "#43CCEA",
           "leading_diamond": "\ue0c5",
           "style": "diamond",
-          "template": " {{ if .SSHSession }}\uf817 {{ end }}{{ .UserName }}<transparent> / </>{{ .HostName }}",
+          "template": " {{ if .SSHSession }}\uf817 {{ end }}{{ .UserName }}<transparent> | </>{{ .HostName }}",
           "type": "session"
         },
         {
-          "background": "#272727",
-          "foreground": "#43CCEA",
+          "background": "#ffffff",
+          "foreground": "#000000",
           "properties": {
-            "time_format": "3:04:05 PM"
+            "time_format": "13:04"
           },
           "style": "diamond",
           "template": "<#000000> \ue31e\uf0fb </>{{ .CurrentDate | date .Format }} ",
