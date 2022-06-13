@@ -5,14 +5,14 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#0077ff",
-          "foreground": "#dd1e1e",
+          "background": "#227bbf",
+          "foreground": "#ffffff",
           "style": "plain",
           "template": " \u26a1",
           "type": "root"
         },
         {
-          "background": "#000000",
+          "background": "#227bbf",
           "foreground": "#ffffff",
           "properties": {
             "alpine": "\uf300",
