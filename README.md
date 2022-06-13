@@ -30,6 +30,7 @@ oh-my-posh get shell
 ```
 Add Profile to powershell
 
-``` notepad $PROFILE ```
-Add ```oh-my-posh init pwsh | Invoke-Expression```
+Open your Profile-File with ``` notepad $PROFILE ``` and then add ```oh-my-posh init pwsh | Invoke-Expression``` to it. Then you simply reload the Profile with ``` . $PROFILE ```
+
+
 
