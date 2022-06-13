@@ -89,8 +89,7 @@
         {
           "background": "#ffffff",
           "foreground": "#000000",
-          "properties": {
-            "time_format": "13:04"
+          "type": "time"
           },
           "style": "diamond",
           "template": "<#000000> \ue31e\uf0fb </>{{ .CurrentDate | date .Format }} ",
