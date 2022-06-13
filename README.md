@@ -30,8 +30,6 @@ oh-my-posh get shell
 ```
 Add Profile to powershell
 
-```cmd
-notepad $PROFILE
-```
-Add ```New-Item -Path $PROFILE -Type File -Force```
+``` notepad $PROFILE ```
+Add ```oh-my-posh init pwsh | Invoke-Expression```
 
