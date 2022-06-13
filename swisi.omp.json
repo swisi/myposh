@@ -61,17 +61,16 @@
           "type": "git"
         },
         {
-          "background": "#272727",
-          "foreground": "#ffffff",
-          "properties": {
-            "style": "dallas",
-            "threshold": 0
-          },
-          "style": "diamond",
-          "template": "<#000000>\ue0b1 </>{{ .FormattedMs }}s ",
-          "trailing_diamond": "\ue0b0",
-          "type": "executiontime"
-        }
+             {
+               "foreground": "#007ACC",
+                "properties": {
+                "time_format": "15:04:05"
+               },
+              "style": "plain",
+              "template": " {{ .CurrentDate | date .Format }} ",
+              "type": "time"
+              }
+          }
       ],
       "type": "prompt"
     },
