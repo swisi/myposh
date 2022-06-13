@@ -5,7 +5,7 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#cccddd",
+          "background": "#0077ff",
           "foreground": "#dd1e1e",
           "style": "plain",
           "template": " \u26a1",
