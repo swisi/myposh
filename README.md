@@ -19,3 +19,19 @@ winget upgrade oh-my-posh
 
 
 ### Linux
+
+## Setup Terminal
+
+### Windows
+
+Get shell
+```cmd
+oh-my-posh get shell
+```
+Add Profile to powershell
+
+```cmd
+notepad $PROFILE
+```
+Add ```New-Item -Path $PROFILE -Type File -Force```
+
