@@ -2,42 +2,39 @@
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "blocks": [
     {
-      "alignment": "right",
-      
+      "type": "rprompt",
       "segments": [
-        
         {
-          "background": "#272525",
-          "foreground": "#fafafa",
+          "foreground": "#007ACC",
           "properties": {
-            "time_format": "15:04"
+            "time_format": "15:04:05"
           },
-          "style": "diamond",
-          "leading_diamond": "\ue0b6",
-          "template": "{{ .CurrentDate | date .Format }} \uf64f",
-          "trailing_diamond": "\ue0b4",
+          "style": "plain",
+          "template": " {{ .CurrentDate | date .Format }} ",
           "type": "time"
         }
-      ],
-      "type":"rprompt"
+      ]
     },
     {
       "alignment": "left",
       "segments": [
         {
-          "background": "#3a3f8c",
-          "foreground": "#ffffff",
-          "style": "diamond",
+          "background": "#ffffff",
+          "foreground": "#100e23",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
           "template": " {{ .UserName }}@{{ .HostName }} ",
-          "trailing_diamond": "\ue0b0",
           "type": "session"
         },
         {
-          "background": "#43548f",
-          "foreground": "#ffffff",
+          "background": "#91ddff",
+          "foreground": "#100e23",
           "powerline_symbol": "\ue0b0",
           "properties": {
-            "style": "agnoster_short"
+            "folder_icon": "\uf115",
+            "folder_separator_icon": " \ue0b1 ",
+            "home_icon": "\uf7db",
+            "style": "agnoster"
           },
           "style": "powerline",
           "template": " {{ .Path }} ",
@@ -50,15 +47,6 @@
           "style": "powerline",
           "template": " {{ .HEAD }} ",
           "type": "git"
-        },
-        {
-          "background": "#FF6471",
-          "foreground": "#ffffff",
-          "leading_diamond": "<transparent,background>\ue0b0</>",
-          "style": "diamond",
-          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
-          "trailing_diamond": "\ue0b4",
-          "type": "python"
         }
       ],
       "type": "prompt"
