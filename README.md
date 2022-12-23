@@ -20,7 +20,12 @@ winget upgrade oh-my-posh
 ### Nerd Fonts
 
 This command needs to be executed as admin. The fonts are installed system wide.
+
+Install Font
+``` cmd 
 oh-my-posh font install
+```
+
 
 #### Windows Terminal
 
