@@ -19,16 +19,16 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#ffffff",
-          "foreground": "#100e23",
+          "background": "#395fc7",
+          "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
           "template": " {{ .UserName }}@{{ .HostName }} ",
           "type": "session"
         },
         {
-          "background": "#91ddff",
-          "foreground": "#100e23",
+          "background": "#3408ac",
+          "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "properties": {
             "folder_icon": "\uf115",
