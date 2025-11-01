@@ -1,57 +1,49 @@
-# myposh
-This is my Repertory for my personal "Oh my posh" settings
+# My Terminal Konfigurationen
 
-https://ohmyposh.dev
+Dieses Repository enthält meine persönlichen Terminal-Konfigurationen für verschiedene Tools und Plattformen.
 
-## Installation
+## 📁 Struktur
 
-### Windows
+Das Repository ist in zwei Hauptverzeichnisse unterteilt:
 
-Install
-``` cmd 
-winget install JanDeDobbeleer.OhMyPosh
-```
+- **[oh-my-posh](./oh-my-posh/)** - Konfigurationen für Oh My Posh (Windows, Linux, macOS)
+- **[oh-my-zsh](./oh-my-zsh/)** - Konfigurationen für Oh My Zsh mit Powerlevel10k (macOS, Linux)
 
-Update
-``` cmd 
-winget upgrade oh-my-posh
-```
+## 🚀 Schnellstart
 
-### Nerd Fonts
+### Für Windows-Nutzer
 
-This command needs to be executed as admin. The fonts are installed system wide.
+Wenn du PowerShell verwendest und ein modernes, schönes Prompt möchtest:
 
-Install Font
-``` cmd 
-oh-my-posh font install
-```
+→ Siehe [oh-my-posh README](./oh-my-posh/README.md)
 
+### Für macOS/Linux-Nutzer
 
-#### Windows Terminal
+Wenn du Zsh verwendest und eine umfassende Shell-Konfiguration suchst:
 
-Once you have installed a Nerd Font, you will need to configure the Windows Terminal to use it. This can be easily done by modifying the Windows Terminal settings (default shortcut: ```CTRL + SHIFT + ,```). 
+→ Siehe [oh-my-zsh README](./oh-my-zsh/README.md)
 
+## 📋 Übersicht
 
+| Tool | Plattformen | Verwendung |
+|------|------------|------------|
+| **Oh My Posh** | Windows, Linux, macOS | Moderne Prompt-Konfiguration für PowerShell, Bash, Zsh, Fish |
+| **Oh My Zsh** | macOS, Linux | Umfassende Zsh-Konfiguration mit Theme und Plugins |
 
-### Linux
+## 🛠️ Installation
 
-## Setup Terminal
+Jedes Verzeichnis enthält eine detaillierte README-Datei mit plattformspezifischen Installationsanleitungen:
 
-### Windows
+1. Navigiere zum entsprechenden Verzeichnis
+2. Folge den Installationsanweisungen in der jeweiligen README
+3. Die Konfigurationen sind so gestaltet, dass sie einfach auf neuen Geräten eingerichtet werden können
 
-Get shell
-```cmd
-oh-my-posh get shell
-```
-Add Profile to powershell
+## 📝 Notizen
 
-Open your Profile-File with ``` notepad $PROFILE ``` and then add ```oh-my-posh init pwsh | Invoke-Expression``` to it. Then you simply reload the Profile with ``` . $PROFILE ```
+- Alle Konfigurationen sind plattformunabhängig gestaltet
+- Die README-Dateien enthalten detaillierte Anleitungen für Windows, macOS und Linux
+- Konfigurationsdateien können direkt verwendet oder als Vorlage für eigene Anpassungen dienen
 
-Initialize your Profile
-``` cmd
-oh-my-posh init pwsh --config https://raw.githubusercontent.com/swisi/myposh/main/swisi.omp.json | Invoke-Expression
-. $PROFILE
-```
+## 📄 Lizenz
 
-
-
+Siehe [LICENSE](./LICENSE) für Details.
